@@ -1,10 +1,23 @@
 body {
     background: #131313;
+    font-family: 'Supermercado One', cursive;
 }
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 42px;
+}
+#clock {
+    height: 270px;
+    width: 270px;
+    position: relative
+  }
 .main {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
+    font-size: 22px;
+    margin-top: 50px;
 }
 #timerDiv1 {
     /* border: white 2px solid; */
@@ -12,23 +25,35 @@ body {
     /* height: 200px !important; */
     flex: 0 1 100%;
     align-self: center;
+    /* margin-bottom: 20px; */
     /* margin: 0 auto; */
 }
 #time {
     display: inline-block;
     color: white;
+    text-shadow: 0px 0px 10px purple,
+                 0px 0px 20px purple,
+                 0px 0px 30px purple,
+                 0px 0px 40px purple,
+                 0px 0px 50px purple,
+                 0px 0px 60px purple,
+                 0px 0px 70px purple;
     text-align: center;
     /* line-height: 100px; */
     /* transform: translateY(-50%);  */
-    position: relative;
+    /* position: relative;
     top: 100px;
-    left: 70px;
+    left: 70px; */
+    position: relative;
+    top: -185px;
+    left: 50px;
+    font-size: 23px;
 }
 .counter {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     border: 2px white solid;
-    width: 250px;
-    height: 250px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     display: flex;
     flex-flow: row wrap;
@@ -43,7 +68,11 @@ body {
 #timerDiv2{
     width: 250px;
     height: 250px;
-    border: 2px green solid;
+    border: 2px purple solid;
+    box-shadow: 0px 0px 10px purple,
+                 0px 0px 20px purple,
+                 0px 0px 30px purple,
+                 0px 0px 40px purple;
     margin: 0 auto;
     border-radius: 50%;
 }
@@ -56,14 +85,52 @@ a {
 .counterDisplay {
     flex: 0 1 30%;
     color: white;
+    text-align: center;
+    position: relative;
+    top: -20px;
 }
 .counterText {
     flex: 1 1 100%;
     width: 100%;
+    position: relative;
+    top: 25px;
+    font-size: 30px;
 }
 .counterText p {
     text-align: center;
 }
 canvas {
     opacity: 0;
+}
+/* #time { */
+a {
+    text-align: center;
+}
+.counter:nth-of-type(2){
+    border: red 2px solid;
+    box-shadow: 0px 0px 10px red,
+                 0px 0px 20px red,
+                 0px 0px 30px red,
+                 0px 0px 40px red;
+
+    text-shadow: 0px 0px 10px red,
+                 0px 0px 20px red,
+                 0px 0px 30px red,
+                 0px 0px 40px red;
+}
+.counter:nth-of-type(3){
+    border: purple 2px solid;
+    box-shadow: 0px 0px 10px purple,
+                 0px 0px 20px purple,
+                 0px 0px 30px purple,
+                 0px 0px 40px purple;
+
+    text-shadow: 0px 0px 10px purple,
+                 0px 0px 20px purple,
+                 0px 0px 30px purple,
+                 0px 0px 40px purple;
+}
+.line {
+    position: relative;
+    flex: 1 1 50%;
 }

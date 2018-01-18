@@ -4,34 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <script src="script.js"></script>
     <title>Pomodoro Clock</title>
 </head>
 <body>
+
+    <h1>Pomodoro Clock</h1>
     <div class = "main">
         <div id = "timerDiv1">
             <div id = "timerDiv2">
+                    <svg id = "clock"> 
+                    <path id="arc1" fill="none" stroke="#446688" stroke-width="20" />
+                      </svg>
                 <p id = "time">Mins: <span id = "min"></span> Sec: <span id = "sec"></span></p>
             </div>
             
         </div>
+        <svg class = "line" >
+                <line x1="90%" y1="0" x2="120" y2="280"  style="stroke:rgb(255,0,0);stroke-width:2" />
+              </svg>
+        <svg class = "line" >
+                    <line x1="60%" y1="180" x2="0" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
+                  </svg>
+            
         <div class = "counter">
             <div class = "counterText">
                 <p>Break</p>
             </div>      
-            <a href="#" id = "minusL">-</a>
+            <a href="#" id = "minusL"><i class="fas fa-minus"></i></a>
             <p class = "counterDisplay" id = "displayL">5</p>
-            <a href="#" id = "plusL">+</a>
+            <a href="#" id = "plusL"><i class="fas fa-plus"></i></a>
         </div>
         <div class = "counter">
                 <div class = "counterText">
                     <p>Session</p>
                 </div>      
-                <a href="#"  id = "minusR">-</a>
+                <a href="#"  id = "minusR"><i class="fas fa-minus"></i></a>
                 <p class = "counterDisplay"id = "displayR">20</p>
-                <a href="#" id = "plusR">+</a>
+                <a href="#" id = "plusR"><i class="fas fa-plus"></i>                </a>
             </div>
     </div>
     
