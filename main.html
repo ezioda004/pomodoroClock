@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"> -->
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
@@ -21,9 +20,9 @@
                 <svg id = "clock"> 
                     <path id="arc1" fill="none" stroke="#446688" stroke-width="18" />
                 </svg>
-                <!-- <p id = "time">Mins: <span id = "min"></span> Sec: <span id = "sec"></span></p> -->
-                <p id = "time"><span id = "min"></span> : <span id = "sec"></span></p>
-                  <a href="#"><i id ="play" class="fas fa-play fa-lg"></i></a>        
+                <p id = "time"><span id = "min"></span>:<span id = "sec"></span></p>
+                <a href="#"><i id ="play" class="fas fa-play fa-lg"></i></a>
+                <a href="#"><i class="fas fa-stop fa-lg"></i></a>        
             </div>
         </div>
         <svg class = "line" id = "red" >
@@ -36,7 +35,7 @@
             <filter id="svgBlur2" x="-5%" y="-5%" width="110%" height="110%">
                 <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
             </filter>
-            <line x1="75%" y1="180" x2="0" y2="0" style="stroke:#00BAD0;stroke-width:10" filter="url(#svgBlur2)"/>
+            <line x1="80%" y1="195" x2="20" y2="0" style="stroke:#00BAD0;stroke-width:10" filter="url(#svgBlur2)"/>
         </svg>
             
         <div class = "counter">
@@ -48,13 +47,13 @@
             <a href="#" id = "plusL"><i class="fas fa-plus"></i></a>
         </div>
         <div class = "counter">
-                <div class = "counterText">
-                    <p>Session</p>
-                </div>      
-                <a href="#"  id = "minusR"><i class="fas fa-minus"></i></a>
-                <p class = "counterDisplay"id = "displayR">20</p>
-                <a href="#" id = "plusR"><i class="fas fa-plus"></i>                </a>
-            </div>
+            <div class = "counterText">
+                <p>Session</p>
+            </div>      
+            <a href="#"  id = "minusR"><i class="fas fa-minus"></i></a>
+            <p class = "counterDisplay"id = "displayR">20</p>
+            <a href="#" id = "plusR"><i class="fas fa-plus"></i></a>
+        </div>
     </div>
     
 
