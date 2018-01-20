@@ -1,3 +1,4 @@
+//To do: Add sound effect on clicking, add 0 for 1 digit mins.
 $(document).ready(function(){
 
 let setMins = 20;
@@ -196,10 +197,13 @@ $("#plusL").on("click", function(e){
         else {
             $("#displayL").text(curVal);
         }
+        setMinsBreak =  $("#displayL").text();
         finalAngB = 360 / ($("#displayL").text()*60);
         opa = 1/($("#displayL").text()*60);
         j = 0;
         secBreak = 0;
+        $("#sec").text(secBreak);
+        $("#min").text(setMinsBreak);
     }
     
 });
@@ -221,7 +225,8 @@ $("#minusL").on("click", function(e){
     setMinsBreak =  $("#displayL").text();
     finalAngB = 360 / ($("#displayL").text()*60);
     opa = 1/($("#displayL").text()*60);
-    
+    $("#sec").text(secBreak);
+    $("#min").text(setMinsBreak);
     j = 0;
     secBreak = 0;
     }
@@ -243,9 +248,10 @@ $("#plusR").on("click", function(e){
             setMins = 60;
         }
         else {
-            $("#displayR").text(curVal);
+            $("#displayR").text(setMins);
         }
-
+        $("#sec").text(sec);
+        $("#min").text(setMins);
         finalAng = 360/($("#displayR").text()*60);
         opa = 1/($("#displayR").text()*60);
         i = 0;
@@ -266,6 +272,7 @@ $("#minusR").on("click", function(e){
         if (curVal < 1){
             curval = 1;
             setMins = 1;
+            $("#displayR").text(setMins);
         }
         else {
             $("#displayR").text(curVal);
