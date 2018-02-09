@@ -154,9 +154,6 @@ $("#timerDiv2 a:nth-of-type(1)").on("click", function(e){
             $('#play').addClass('fa-play');
          });
         }
-    // alert("test");
-    // console.log(isPause, "pause");
-    
 });
 
 //Stop/Reset Button
@@ -202,8 +199,6 @@ $("#plusL").on("click", function(e){
         opa = 1/($("#displayL").text()*60);
         j = 0;
         secBreak = 0;
-        $("#sec").text(secBreak);
-        $("#min").text(setMinsBreak);
     }
     
 });
@@ -225,8 +220,6 @@ $("#minusL").on("click", function(e){
     setMinsBreak =  $("#displayL").text();
     finalAngB = 360 / ($("#displayL").text()*60);
     opa = 1/($("#displayL").text()*60);
-    // $("#sec").text(secBreak);
-    // $("#min").text(setMinsBreak);
     j = 0;
     secBreak = 0;
     }
@@ -250,8 +243,8 @@ $("#plusR").on("click", function(e){
         else {
             $("#displayR").text(setMins);
         }
-        // $("#sec").text(sec);
-        // $("#min").text(setMins);
+        $("#sec").text(sec);
+        $("#min").text(setMins);
         finalAng = 360/($("#displayR").text()*60);
         opa = 1/($("#displayR").text()*60);
         i = 0;
